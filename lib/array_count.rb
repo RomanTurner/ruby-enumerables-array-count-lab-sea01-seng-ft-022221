@@ -1,10 +1,11 @@
 def count_strings(array)
   # Return the total number of strings in the provided array using the count enumerable
- array.count do |index|
+  count = 0 
+  array.count do |index|
    count.is_a? String
    count += 1 
- end 
- count
+  end 
+  count
 end
 
 def count_empty_strings(array)
